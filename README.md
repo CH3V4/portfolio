@@ -1,4 +1,4 @@
-# Portfolio — SOC, SIEM, AI & Automation
+# Portfolio
 
 A collection of projects and real-world use cases built to solve problems in
 **Security Operations (SOC)**, **SIEM engineering**, and **AI-driven automation**.
