@@ -41,6 +41,21 @@ An AI-powered automation layer sits between the SIEM and the analyst. When alert
 
 Analysts no longer perform any of the triage legwork. Their entire workflow collapses to a single decision: **close or escalate**. Alert handling time dropped dramatically, analyst burnout was reduced, and consistency of triage improved since every case receives the same structured enrichment regardless of who is on shift.
 
+**How it works**
+
+```mermaid
+flowchart LR
+    A[SIEM Alerts] --> B[Correlate &amp; group<br/>into a single case]
+    B --> C{Enrich}
+    C --> C1[Threat Intel<br/>IPs · hashes · domains]
+    C --> C2[RAG store<br/>similar past cases]
+    C1 --> D[AI Model]
+    C2 --> D
+    D --> E[Structured summary<br/>+ severity assessment]
+    E --> F[Posted inside the case]
+    F --> G{Analyst decision:<br/>close or escalate}
+```
+
 <!-- ![SOC AI Agent — sample](SOC_AI_Agent/screenshots/overview.png) -->
 
 ---
