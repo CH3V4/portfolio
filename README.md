@@ -112,6 +112,20 @@ A central web UI that pulls alert and case data from all SIEMs via their REST AP
 
 The tab-switching ritual was eliminated. Analysts now have a single pane of glass for all customers, reducing the chance of missing an open alert and cutting the time spent on passive monitoring. The news feed also keeps threat awareness integrated into the daily workflow rather than being a separate activity.
 
+**How it works**
+
+```mermaid
+flowchart LR
+    S1[SIEM A] -->|REST API| H[Central Dashboard]
+    S2[SIEM B] -->|REST API| H
+    S3[SIEM C] -->|REST API| H
+    N[News sources] --> H
+    H --> V1[Open cases per customer<br/>charts &amp; counters]
+    H --> V2[Cyber news feed]
+    V1 --> A[Single pane of glass]
+    V2 --> A
+```
+
 <!-- ![Central Dashboard — sample](Central_Dashboard/screenshots/overview.png) -->
 
 ---
