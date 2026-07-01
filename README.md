@@ -13,17 +13,19 @@ illustration.
 
 ---
 
-## Table of Contents
+## At a Glance
 
-1. [SOC AI Agent](#soc-ai-agent)
-2. [Detection as Code](#detection-as-code)
-3. [Central Dashboard](#central-dashboard)
-4. [Log Parser](#log-parser)
-5. [SOC Report](#soc-report)
-6. [Notifier](#notifier)
-7. [Session Manager](#session-manager)
-8. [CaseClock](#caseclock)
-9. [Evaluations](#evaluations)
+| Project | What it does |
+| --- | --- |
+| [SOC AI Agent](#soc-ai-agent) | Auto-triages SIEM alerts — groups, enriches, and AI-summarizes cases so analysts just close or escalate |
+| [Detection as Code](#detection-as-code) | Version-controls detection rules in Git and deploys them to all SIEMs from one push |
+| [Central Dashboard](#central-dashboard) | Single pane of glass aggregating open cases across all customer SIEMs, plus a cyber news feed |
+| [Log Parser](#log-parser) | Parses non-standard log sources into structured, queryable Elastic events |
+| [SOC Report](#soc-report) | Generates a formatted Word SOC report from live SIEM metrics in under a minute |
+| [Notifier](#notifier) | Backup notification path for high/critical cases via Email, Teams, and Telegram |
+| [Session Manager](#session-manager) | Self-hosted, free RDP/SSH session manager replacing paid tooling |
+| [CaseClock](#caseclock) | Estimates working time per case and reports it by customer and analyst |
+| [Evaluations](#evaluations) | Purpose-built scripts that export ad-hoc user/endpoint activity to Excel |
 
 ---
 
